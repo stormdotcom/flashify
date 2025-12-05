@@ -13,19 +13,29 @@ const state: FlashifyState = {
   notifications: [],
 };
 
+// keep a stable snapshot object to avoid infinite re-render loops in hooks
+let snapshot: FlashifyState = { notifications: [] };
+
 const listeners = new Set<FlashifyListener>();
 const timers = new Map<string, number>();
 
+function refreshSnapshot() {
+  snapshot = {
+    notifications: [...state.notifications],
+  };
+}
+
 function notifyListeners() {
+  refreshSnapshot();
   for (const listener of listeners) {
-    listener({ ...state, notifications: [...state.notifications] });
+    listener(snapshot);
   }
 }
 
 export function subscribe(listener: FlashifyListener) {
   listeners.add(listener);
   // initial push
-  listener({ ...state, notifications: [...state.notifications] });
+  listener(snapshot);
 
   return () => {
     listeners.delete(listener);
@@ -33,7 +43,7 @@ export function subscribe(listener: FlashifyListener) {
 }
 
 export function getState(): FlashifyState {
-  return { ...state, notifications: [...state.notifications] };
+  return snapshot;
 }
 
 export function addNotification(options: FlashifyOptions): FlashifyNotification {
