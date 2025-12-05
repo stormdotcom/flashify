@@ -7,6 +7,7 @@ Framework-agnostic notification engine for Flashify. Provides the store, helpers
 ```bash
 npm install @ajmal_n/flashify-core
 ```
+<button onclick="navigator.clipboard.writeText('npm install @ajmal_n/flashify-core')">Copy install command</button>
 
 ## Basic usage
 

@@ -7,6 +7,7 @@ Vue bindings (stub) for Flashify, built on `@ajmal_n/flashify-core`. This packag
 ```bash
 npm install @ajmal_n/flashify-vue @ajmal_n/flashify-core
 ```
+<button onclick="navigator.clipboard.writeText('npm install @ajmal_n/flashify-vue @ajmal_n/flashify-core')">Copy install command</button>
 
 ## Status
 

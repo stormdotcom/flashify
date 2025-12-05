@@ -7,6 +7,7 @@ Angular bindings (stub) for Flashify, built on `@ajmal_n/flashify-core`. Intende
 ```bash
 npm install @ajmal_n/flashify-angular @ajmal_n/flashify-core
 ```
+<button onclick="navigator.clipboard.writeText('npm install @ajmal_n/flashify-angular @ajmal_n/flashify-core')">Copy install command</button>
 
 ## Status
 

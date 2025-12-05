@@ -7,6 +7,7 @@ React bindings for Flashify, a lightweight notification system powered by `@ajma
 ```bash
 npm install @ajmal_n/flashify-react @ajmal_n/flashify-core
 ```
+<button onclick="navigator.clipboard.writeText('npm install @ajmal_n/flashify-react @ajmal_n/flashify-core')">Copy install command</button>
 
 ## Usage
 

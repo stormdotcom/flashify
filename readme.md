@@ -22,11 +22,13 @@ It lets you show clean and animated alerts (success, error, warning, info, custo
 ```bash
 npm install @ajmal_n/flashify-core
 ```
+<button onclick="navigator.clipboard.writeText('npm install @ajmal_n/flashify-core')">Copy install command</button>
 
 ### React wrapper
 ```bash
 npm install @ajmal_n/flashify-react
 ```
+<button onclick="navigator.clipboard.writeText('npm install @ajmal_n/flashify-react')">Copy install command</button>
 
 ---
 

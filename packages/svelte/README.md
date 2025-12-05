@@ -7,6 +7,7 @@ Svelte bindings (stub) for Flashify, powered by `@ajmal_n/flashify-core`. Provid
 ```bash
 npm install @ajmal_n/flashify-svelte @ajmal_n/flashify-core
 ```
+<button onclick="navigator.clipboard.writeText('npm install @ajmal_n/flashify-svelte @ajmal_n/flashify-core')">Copy install command</button>
 
 ## Status
 
