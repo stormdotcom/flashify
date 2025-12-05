@@ -9,6 +9,11 @@ npm install @ajmal_n/flashify-angular @ajmal_n/flashify-core
 ```
 <button onclick="navigator.clipboard.writeText('npm install @ajmal_n/flashify-angular @ajmal_n/flashify-core')">Copy install command</button>
 
+Using pnpm:
+```bash
+pnpm add @ajmal_n/flashify-angular @ajmal_n/flashify-core
+```
+
 ## Status
 
 Currently a placeholder. Implement Angular providers/components to consume the core store in future updates.

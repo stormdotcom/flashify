@@ -9,6 +9,11 @@ npm install @ajmal_n/flashify-core
 ```
 <button onclick="navigator.clipboard.writeText('npm install @ajmal_n/flashify-core')">Copy install command</button>
 
+Using pnpm:
+```bash
+pnpm add @ajmal_n/flashify-core
+```
+
 ## Basic usage
 
 ```ts
