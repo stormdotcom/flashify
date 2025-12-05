@@ -1,0 +1,25 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dist
+dist/
+build/
+
+# Logs
+logs
+*.log
+pnpm-debug.log*
+
+# Editor
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+
+# pnpm
+.pnpm-store/
