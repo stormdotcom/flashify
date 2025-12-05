@@ -7,15 +7,18 @@
   "types": "dist/index.d.ts",
   "peerDependencies": {
     "svelte": "^4.0.0",
-    "@flashify/core": "0.1.0"
+    "@flashify/core": "workspace:^0.1.0"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "lint": "echo \"No lint configured for @flashify/svelte yet\"",
     "test": "echo \"No tests for @flashify/svelte yet\""
   },
+  "devDependencies": {
+    "@flashify/core": "workspace:*"
+  },
   "license": "ISC",
   "publishConfig": {
-  "access": "public"
-}
+    "access": "public"
+  }
 }

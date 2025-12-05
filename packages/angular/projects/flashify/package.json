@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "peerDependencies": {
     "@angular/core": "^17.0.0",
-    "@flashify/core": "0.1.0"
+    "@flashify/core": "workspace:^0.1.0"
   },
   "scripts": {
     "build": "echo \"Angular library build not configured yet\"",
@@ -15,6 +15,6 @@
   },
   "license": "ISC",
   "publishConfig": {
-  "access": "public"
-}
+    "access": "public"
+  }
 }

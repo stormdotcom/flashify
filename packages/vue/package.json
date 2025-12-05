@@ -7,7 +7,7 @@
   "types": "dist/index.d.ts",
   "peerDependencies": {
     "vue": "^3.0.0",
-    "@flashify/core": "0.1.0"
+    "@flashify/core": "workspace:^0.1.0"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -16,6 +16,6 @@
   },
   "license": "ISC",
   "publishConfig": {
-  "access": "public"
-}
+    "access": "public"
+  }
 }

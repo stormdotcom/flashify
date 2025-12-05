@@ -7,7 +7,7 @@
   "peerDependencies": {
     "react": ">=17.0.0",
     "react-dom": ">=17.0.0",
-    "@flashify/core": "^0.1.0"
+    "@flashify/core": "workspace:^0.1.0"
   },
   "files": ["dist"],
   "scripts": {
@@ -16,13 +16,13 @@
     "lint": "echo \"no lint yet\""
   },
   "devDependencies": {
-    "@flashify/core": "0.1.0",
+    "@flashify/core": "workspace:*",
     "tsup": "^8.0.0",
     "typescript": "^5.6.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0"
   },
   "publishConfig": {
-  "access": "public"
-}
+    "access": "public"
+  }
 }
