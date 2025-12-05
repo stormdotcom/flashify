@@ -23,3 +23,5 @@ pnpm-debug.log*
 
 # pnpm
 .pnpm-store/
+pnpm-lock.yaml
+**/pnpm-lock.yaml
