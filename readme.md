@@ -1,11 +1,11 @@
-# ⚡ Flashify — Simple & Modern Notification System
+#  Flashify — Simple & Modern Notification System
 
 Flashify is a lightweight and framework-agnostic notification library.  
 It lets you show clean and animated alerts (success, error, warning, info, custom) in any web app — React, Angular, Svelte, Vue, or plain JavaScript.
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Works with **any framework** (core + simple wrappers)
 - **Success, Error, Warning, Info, Default, Custom** notifications
@@ -16,7 +16,7 @@ It lets you show clean and animated alerts (success, error, warning, info, custo
 
 ---
 
-## 📦 Install
+##  Install
 
 ### Core package (for any JS app)
 ```bash
@@ -30,7 +30,7 @@ npm install @flashify/react
 
 ---
 
-## 🧁 Basic Usage (React)
+##  Basic Usage (React)
 
 ```tsx
 import { FlashifyProvider, useFlashify } from "@flashify/react";
@@ -58,7 +58,7 @@ Wrap your app:
 
 ---
 
-## 🧩 Core Usage (Vanilla JavaScript)
+##  Core Usage (Vanilla JavaScript)
 
 ```js
 import { flashify } from "@flashify/core";
@@ -80,7 +80,7 @@ flashify.show({
 
 ---
 
-## 🎨 Styling & Theming
+##  Styling & Theming
 
 Flashify uses CSS variables, so you can change colors instantly:
 
@@ -135,14 +135,14 @@ flashify.clear()
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Pull requests are welcome!  
 You can add wrappers for other frameworks or improve animations/themes.
 
 ---
 
-## 📄 License
+##  License
 
 MIT License  
 Free for commercial and personal projects.
