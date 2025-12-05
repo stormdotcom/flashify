@@ -13,5 +13,8 @@
     "lint": "echo \"No lint configured for @flashify/angular yet\"",
     "test": "echo \"No tests for @flashify/angular yet\""
   },
-  "license": "ISC"
+  "license": "ISC",
+  "publishConfig": {
+  "access": "public"
+}
 }

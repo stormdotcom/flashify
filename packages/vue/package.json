@@ -14,5 +14,8 @@
     "lint": "echo \"No lint configured for @flashify/vue yet\"",
     "test": "echo \"No tests for @flashify/vue yet\""
   },
-  "license": "ISC"
+  "license": "ISC",
+  "publishConfig": {
+  "access": "public"
+}
 }

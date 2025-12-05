@@ -14,5 +14,8 @@
     "lint": "echo \"No lint configured for @flashify/svelte yet\"",
     "test": "echo \"No tests for @flashify/svelte yet\""
   },
-  "license": "ISC"
+  "license": "ISC",
+  "publishConfig": {
+  "access": "public"
+}
 }

@@ -34,6 +34,12 @@ npm install @flashify/react
 
 ```tsx
 import { FlashifyProvider, useFlashify } from "@flashify/react";
+# index.tsx (or main.tsx)
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <FlashifyProvider>
+    <App />
+  </FlashifyProvider>
+);
 
 function App() {
   const flash = useFlashify();
