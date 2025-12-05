@@ -1,0 +1,44 @@
+{
+  "branches": ["main"],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/changelog",
+      { "changelogFile": "CHANGELOG.md" }
+    ],
+    [
+      "@semantic-release/npm",
+      { "pkgRoot": "packages/core" }
+    ],
+    [
+      "@semantic-release/npm",
+      { "pkgRoot": "packages/react" }
+    ],
+    [
+      "@semantic-release/npm",
+      { "pkgRoot": "packages/vue" }
+    ],
+    [
+      "@semantic-release/npm",
+      { "pkgRoot": "packages/svelte" }
+    ],
+    [
+      "@semantic-release/npm",
+      { "pkgRoot": "packages/angular/projects/flashify" }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "CHANGELOG.md",
+          "packages/core/package.json",
+          "packages/react/package.json",
+          "packages/vue/package.json",
+          "packages/svelte/package.json",
+          "packages/angular/projects/flashify/package.json"
+        ]
+      }
+    ]
+  ]
+}
