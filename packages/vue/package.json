@@ -1,5 +1,5 @@
 {
-  "name": "@flashify/vue",
+  "name": "@ajmal_n/flashify-vue",
   "version": "0.1.0",
   "description": "Vue bindings (stub) for the Flashify core notification system.",
   "main": "dist/index.js",
@@ -7,12 +7,12 @@
   "types": "dist/index.d.ts",
   "peerDependencies": {
     "vue": "^3.0.0",
-    "@flashify/core": "workspace:^0.1.0"
+    "@ajmal_n/flashify-core": "workspace:^0.1.0"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "lint": "echo \"No lint configured for @flashify/vue yet\"",
-    "test": "echo \"No tests for @flashify/vue yet\""
+    "lint": "echo \"No lint configured for @ajmal_n/flashify-vue yet\"",
+    "test": "echo \"No tests for @ajmal_n/flashify-vue yet\""
   },
   "license": "ISC",
   "publishConfig": {

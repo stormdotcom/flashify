@@ -6,6 +6,6 @@
     "start": "echo \"Serve index.html with any static server; add a bundler if you want TS compilation\""
   },
   "dependencies": {
-    "@flashify/core": "0.1.0"
+    "@ajmal_n/flashify-core": "0.1.0"
   }
 }

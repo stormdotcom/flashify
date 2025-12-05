@@ -33,7 +33,7 @@ importers:
         specifier: '>=17.0.0'
         version: 19.2.1(react@19.2.1)
     devDependencies:
-      '@flashify/core':
+      '@ajmal_n/flashify-core':
         specifier: workspace:*
         version: link:../core
       '@types/react':
@@ -55,13 +55,13 @@ importers:
         specifier: ^4.0.0
         version: 4.2.20
     devDependencies:
-      '@flashify/core':
+      '@ajmal_n/flashify-core':
         specifier: workspace:*
         version: link:../core
 
   packages/vue:
     dependencies:
-      '@flashify/core':
+      '@ajmal_n/flashify-core':
         specifier: workspace:^0.1.0
         version: link:../core
       vue:

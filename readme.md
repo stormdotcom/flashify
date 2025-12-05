@@ -20,12 +20,12 @@ It lets you show clean and animated alerts (success, error, warning, info, custo
 
 ### Core package (for any JS app)
 ```bash
-npm install @flashify/core
+npm install @ajmal_n/flashify-core
 ```
 
 ### React wrapper
 ```bash
-npm install @flashify/react
+npm install @ajmal_n/flashify-react
 ```
 
 ---
@@ -33,8 +33,8 @@ npm install @flashify/react
 ##  Basic Usage (React)
 
 ```tsx
-import { FlashifyProvider, useFlashify } from "@flashify/react";
-# index.tsx (or main.tsx)
+import { FlashifyProvider, useFlashify } from "@ajmal_n/flashify-react";
+--index.tsx (or main.tsx)
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <FlashifyProvider>
     <App />
@@ -67,7 +67,7 @@ Wrap your app:
 ##  Core Usage (Vanilla JavaScript)
 
 ```js
-import { flashify } from "@flashify/core";
+import { flashify } from "@ajmal_n/flashify-core";
 
 flashify.success("Saved successfully!");
 flashify.error("Something went wrong");

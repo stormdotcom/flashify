@@ -3,7 +3,7 @@ import {
   type FlashifyNotification,
   type FlashifyPosition,
   type FlashifyState,
-} from "@flashify/core";
+} from "@ajmal_n/flashify-core";
 import React, { useSyncExternalStore } from "react";
 
 type Grouped = Record<FlashifyPosition, FlashifyNotification[]>;

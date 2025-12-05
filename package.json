@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "pnpm -r build",
-    "dev": "pnpm --filter @flashify/react dev",
+    "dev": "pnpm --filter @ajmal_n/flashify-react dev",
     "lint": "pnpm -r lint"
   },
   "devDependencies": {

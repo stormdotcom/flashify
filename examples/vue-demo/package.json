@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "vue": "^3.0.0",
-    "@flashify/vue": "0.1.0",
-    "@flashify/core": "0.1.0"
+    "@ajmal_n/flashify-vue": "0.1.0",
+    "@ajmal_n/flashify-core": "0.1.0"
   }
 }

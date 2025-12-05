@@ -1,17 +1,17 @@
 {
-  "name": "@flashify/angular",
+  "name": "@ajmal_n/flashify-angular",
   "version": "0.1.0",
   "description": "Angular bindings (stub) for the Flashify core notification system.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "peerDependencies": {
     "@angular/core": "^17.0.0",
-    "@flashify/core": "workspace:^0.1.0"
+    "@ajmal_n/flashify-core": "workspace:^0.1.0"
   },
   "scripts": {
     "build": "echo \"Angular library build not configured yet\"",
-    "lint": "echo \"No lint configured for @flashify/angular yet\"",
-    "test": "echo \"No tests for @flashify/angular yet\""
+    "lint": "echo \"No lint configured for @ajmal_n/flashify-angular yet\"",
+    "test": "echo \"No tests for @ajmal_n/flashify-angular yet\""
   },
   "license": "ISC",
   "publishConfig": {

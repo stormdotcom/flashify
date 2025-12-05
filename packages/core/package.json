@@ -1,5 +1,5 @@
 {
-  "name": "@flashify/core",
+  "name": "@ajmal_n/flashify-core",
   "version": "0.1.0",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -21,6 +21,6 @@
     "typescript": "^5.6.0"
   },
   "publishConfig": {
-  "access": "public"
-}
+    "access": "public"
+  }
 }

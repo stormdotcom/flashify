@@ -1,4 +1,4 @@
-import { flashify, type FlashifyNotification, type FlashifyOptions } from "@flashify/core";
+import { flashify, type FlashifyNotification, type FlashifyOptions } from "@ajmal_n/flashify-core";
 import { useCallback } from "react";
 
 export function useFlashify() {

@@ -3,9 +3,9 @@ import ReactDOM from "react-dom";
 import { FlashifyContainer } from "./FlashifyContainer";
 
 // users can choose to import CSS in their app instead if they want
-import "@flashify/core/dist/styles/animations.css";
-import "@flashify/core/dist/styles/base.css";
-import "@flashify/core/dist/styles/variants.css";
+import "@ajmal_n/flashify-core/dist/styles/animations.css";
+import "@ajmal_n/flashify-core/dist/styles/base.css";
+import "@ajmal_n/flashify-core/dist/styles/variants.css";
 
 interface FlashifyProviderProps {
   children: ReactNode;
