@@ -1,6 +1,6 @@
 {
   "name": "@ajmal_n/flashify-angular",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Angular bindings (stub) for the Flashify core notification system.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
