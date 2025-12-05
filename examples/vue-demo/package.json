@@ -1,0 +1,13 @@
+{
+  "name": "flashify-vue-demo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "echo \"Add a bundler (e.g. Vite) to run this Vue demo\""
+  },
+  "dependencies": {
+    "vue": "^3.0.0",
+    "@flashify/vue": "0.1.0",
+    "@flashify/core": "0.1.0"
+  }
+}

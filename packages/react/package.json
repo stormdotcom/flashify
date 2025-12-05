@@ -1,0 +1,25 @@
+{
+  "name": "@flashify/react",
+  "version": "0.1.0",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0",
+    "@flashify/core": "^0.1.0"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.tsx --dts --format cjs,esm",
+    "dev": "tsup src/index.tsx --watch",
+    "lint": "echo \"no lint yet\""
+  },
+  "devDependencies": {
+    "@flashify/core": "0.1.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.6.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0"
+  }
+}

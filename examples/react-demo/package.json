@@ -1,0 +1,14 @@
+{
+  "name": "flashify-react-demo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "echo \"Add a bundler (e.g. Vite) to run this demo\""
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "@flashify/react": "0.1.0",
+    "@flashify/core": "0.1.0"
+  }
+}

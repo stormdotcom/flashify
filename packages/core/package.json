@@ -1,0 +1,23 @@
+{
+  "name": "@flashify/core",
+  "version": "0.1.0",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "sideEffects": [
+    "./dist/styles/base.css",
+    "./dist/styles/variants.css",
+    "./dist/styles/animations.css"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts src/styles/*.css --dts --format cjs,esm",
+    "lint": "echo \"no lint yet\""
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.6.0"
+  }
+}

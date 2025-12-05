@@ -1,0 +1,29 @@
+.flashify-enter {
+  animation: flashify-slide-in 0.22s ease-out;
+}
+
+.flashify-exit {
+  animation: flashify-fade-out 0.16s ease-in forwards;
+}
+
+@keyframes flashify-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px) translateZ(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateZ(0);
+  }
+}
+
+@keyframes flashify-fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0) translateZ(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-4px) translateZ(0);
+  }
+}

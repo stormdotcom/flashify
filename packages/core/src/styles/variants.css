@@ -1,0 +1,29 @@
+.flashify-default {
+  background: var(--flashify-default-bg);
+  border-color: var(--flashify-default-border);
+  color: var(--flashify-default-text);
+}
+
+.flashify-success {
+  background: var(--flashify-success-bg);
+  border-color: var(--flashify-success-border);
+  color: var(--flashify-success-text);
+}
+
+.flashify-error {
+  background: var(--flashify-error-bg);
+  border-color: var(--flashify-error-border);
+  color: var(--flashify-error-text);
+}
+
+.flashify-warning {
+  background: var(--flashify-warning-bg);
+  border-color: var(--flashify-warning-border);
+  color: var(--flashify-warning-text);
+}
+
+.flashify-info {
+  background: var(--flashify-info-bg);
+  border-color: var(--flashify-info-border);
+  color: var(--flashify-info-text);
+}

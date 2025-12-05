@@ -1,0 +1,71 @@
+:root {
+  --flashify-success-bg: #ecfdf5;
+  --flashify-success-border: #10b981;
+  --flashify-success-text: #065f46;
+
+  --flashify-error-bg: #fef2f2;
+  --flashify-error-border: #ef4444;
+  --flashify-error-text: #991b1b;
+
+  --flashify-warning-bg: #fffbeb;
+  --flashify-warning-border: #f59e0b;
+  --flashify-warning-text: #92400e;
+
+  --flashify-info-bg: #eff6ff;
+  --flashify-info-border: #3b82f6;
+  --flashify-info-text: #1e40af;
+
+  --flashify-default-bg: #f9fafb;
+  --flashify-default-border: #e5e7eb;
+  --flashify-default-text: #111827;
+
+  --flashify-radius: 12px;
+  --flashify-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+.flashify {
+  display: flex;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: var(--flashify-radius);
+  box-shadow: var(--flashify-shadow);
+  border-left: 4px solid;
+  font-size: 0.95rem;
+  align-items: flex-start;
+  max-width: 380px;
+  backdrop-filter: blur(8px);
+  background-clip: padding-box;
+}
+
+.flashify-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.flashify-body {
+  flex: 1;
+}
+
+.flashify-title {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.flashify-message {
+  line-height: 1.4;
+}
+
+.flashify-close {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 6px;
+  opacity: 0.6;
+}
+
+.flashify-close:hover {
+  opacity: 1;
+}

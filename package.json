@@ -1,0 +1,13 @@
+{
+  "name": "flashify-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm --filter @flashify/react dev",
+    "lint": "pnpm -r lint"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.6.0"
+  }
+}
