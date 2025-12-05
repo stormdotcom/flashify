@@ -146,3 +146,6 @@ You can add wrappers for other frameworks or improve animations/themes.
 
 MIT License  
 Free for commercial and personal projects.
+
+
+[![Maintainer](https://img.shields.io/badge/maintainer-Ajmal%20Nasumudeen%20(stormdotcom)-blue)](https://github.com/stormdotcom)
