@@ -7,7 +7,7 @@ yarn-error.log*
 # Dist
 dist/
 build/
-
+app/
 # Logs
 logs
 *.log
