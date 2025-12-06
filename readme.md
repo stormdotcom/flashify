@@ -2,6 +2,7 @@
 
 Flashify is a lightweight and framework-agnostic notification library.  
 It lets you show clean and animated alerts (success, error, warning, info, custom) in any web app — React, Angular, Svelte, Vue, or plain JavaScript.
+Live demo: https://flashify-react.vercel.app/
 
 ---
 
