@@ -209,8 +209,15 @@ function App() {
         <div className="stack">
           <p className="body">
             Flashify is a lightweight and framework-agnostic notification library. It lets you show
-            clean and animated alerts (success, error, warning, info, custom) in React web app.
+            clean and animated alerts (success, error, warning, info, custom) in React web app. See{' '}
+            <a href="https://www.npmjs.com/package/@ajmal_n/flashify-react" target="_blank" rel="noreferrer">
+              @ajmal_n/flashify-react on npm
+            </a>
+            .
           </p>
+          <div className="meta-row">
+            <div className="code-block">npm install @ajmal_n/flashify-react @ajmal_n/flashify-core</div>
+          </div>
           <div className="feature-list">
             <div className="feature">Works with any framework (core + simple wrappers)</div>
             <div className="feature">Success, Error, Warning, Info, Default, Custom notifications</div>
@@ -223,7 +230,7 @@ function App() {
       </section>
 
       <footer className="footer">
-        <span>Made with Love</span>
+        <span>Made with ❤️</span>
         <a href="https://ajmalnasumudeen.in/" target="_blank" rel="noreferrer">
           Ajmal Nasumudeen
         </a>

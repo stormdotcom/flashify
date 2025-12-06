@@ -146,6 +146,23 @@ body {
   line-height: 1.6;
 }
 
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.code-block {
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: var(--chip-bg, rgba(255, 255, 255, 0.08));
+  border: 1px solid var(--panel-border, rgba(255, 255, 255, 0.12));
+  color: var(--text-color, #f8fbff);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+
 .feature-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
