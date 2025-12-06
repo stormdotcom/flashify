@@ -5,6 +5,7 @@ import {
   type FlashifyState,
 } from "@ajmal_n/flashify-core";
 import React, { useSyncExternalStore } from "react";
+import { defaultIcons } from "./icons";
 
 type Grouped = Record<FlashifyPosition, FlashifyNotification[]>;
 
@@ -86,15 +87,6 @@ const typeTitle: Partial<Record<string, string>> = {
   info: "Info",
 };
 
-const typeIcon: Record<string, React.ReactNode> = {
-  success: "OK",
-  error: "!",
-  warning: "!",
-  info: "i",
-  default: "*",
-  custom: "*",
-};
-
 function toNode(value: unknown): React.ReactNode | null {
   if (value === null || value === undefined) return null;
   if (
@@ -110,7 +102,8 @@ function toNode(value: unknown): React.ReactNode | null {
 
 function FlashifyItem({ notification }: FlashifyItemProps) {
   const { id, type, message, description, customClassName } = notification;
-  const iconNode = toNode(notification.icon) ?? typeIcon[type] ?? typeIcon.default;
+  const iconNode =
+    toNode(notification.icon) ?? defaultIcons[type] ?? defaultIcons.default;
   const messageNode = toNode(message) ?? String(message);
   const descriptionNode = toNode(description);
 
