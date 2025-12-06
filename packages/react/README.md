@@ -1,5 +1,9 @@
 # @ajmal_n/flashify-react
 
+
+- Live demo: https://flashify-react.vercel.app
+
+
 React bindings for Flashify, a lightweight notification system powered by `@ajmal_n/flashify-core`.
 
 ## Install

@@ -86,8 +86,33 @@ const typeTitle: Partial<Record<string, string>> = {
   info: "Info",
 };
 
+const typeIcon: Record<string, React.ReactNode> = {
+  success: "OK",
+  error: "!",
+  warning: "!",
+  info: "i",
+  default: "*",
+  custom: "*",
+};
+
+function toNode(value: unknown): React.ReactNode | null {
+  if (value === null || value === undefined) return null;
+  if (
+    typeof value === "string" ||
+    typeof value === "number" ||
+    typeof value === "boolean"
+  ) {
+    return value;
+  }
+  if (React.isValidElement(value)) return value;
+  return null;
+}
+
 function FlashifyItem({ notification }: FlashifyItemProps) {
   const { id, type, message, description, customClassName } = notification;
+  const iconNode = toNode(notification.icon) ?? typeIcon[type] ?? typeIcon.default;
+  const messageNode = toNode(message) ?? String(message);
+  const descriptionNode = toNode(description);
 
   const className = [
     "flashify",
@@ -100,15 +125,9 @@ function FlashifyItem({ notification }: FlashifyItemProps) {
 
   return (
     <div className={className}>
-      {/* Simple icon placeholder: wrappers can override later */}
       <div className="flashify-icon">
         <span role="img" aria-hidden="true">
-          {type === "success" && "✅"}
-          {type === "error" && "⛔"}
-          {type === "warning" && "⚠️"}
-          {type === "info" && "ℹ️"}
-          {type === "default" && "📌"}
-          {type === "custom" && "✨"}
+          {iconNode}
         </span>
       </div>
 
@@ -116,13 +135,13 @@ function FlashifyItem({ notification }: FlashifyItemProps) {
         {typeTitle[type] && (
           <div className="flashify-title">{typeTitle[type]}</div>
         )}
-        <div className="flashify-message">{message}</div>
-        {description && (
+        <div className="flashify-message">{messageNode}</div>
+        {descriptionNode && (
           <div
             className="flashify-description"
             style={{ marginTop: 2, opacity: 0.85 }}
           >
-            {description}
+            {descriptionNode}
           </div>
         )}
       </div>
@@ -132,8 +151,7 @@ function FlashifyItem({ notification }: FlashifyItemProps) {
         onClick={() => flashify.dismiss(id)}
         aria-label="Close notification"
       >
-        
-        ×
+        x
       </button>
     </div>
   );
