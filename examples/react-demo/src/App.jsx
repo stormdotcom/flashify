@@ -67,6 +67,50 @@ function App() {
     [],
   )
   const [themeIndex, setThemeIndex] = useState(0)
+  const installCommand = 'npm install @ajmal_n/flashify-react @ajmal_n/flashify-core'
+
+  const handleCopyInstall = () => {
+    navigator.clipboard?.writeText(installCommand)
+    flash.info('Install command copied', { ...defaultToastOptions })
+  }
+
+  const IconCopy = () => (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M9 9.5C9 8.672 9.672 8 10.5 8h7c.828 0 1.5.672 1.5 1.5v7c0 .828-.672 1.5-1.5 1.5h-7C9.672 18 9 17.328 9 16.5v-7Z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M6 14V6.5C6 5.672 6.672 5 7.5 5h7"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+
+  const IconGithub = () => (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M12 2a10 10 0 0 0-3.162 19.493c.5.09.684-.216.684-.482 0-.237-.009-.866-.014-1.699-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.607.069-.607 1.003.07 1.53 1.03 1.53 1.03.893 1.53 2.343 1.088 2.914.833.09-.647.35-1.089.636-1.34-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.682-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.566 9.566 0 0 1 12 6.844a9.56 9.56 0 0 1 2.5.337c1.91-1.294 2.748-1.025 2.748-1.025.545 1.378.202 2.397.1 2.65.64.698 1.027 1.59 1.027 2.682 0 3.842-2.339 4.687-4.566 4.935.36.31.68.923.68 1.861 0 1.343-.012 2.426-.012 2.756 0 .268.18.577.69.48A10 10 0 0 0 12 2Z"
+        fill="currentColor"
+      />
+    </svg>
+  )
+
+  const IconNpm = () => (
+    <svg width="20" height="20" viewBox="0 0 50 50" fill="none" aria-hidden="true">
+      <path d="M2 14h46v22H26v4H14v-4H2V14Z" fill="#C12127" />
+      <path d="M6 18h38v14H26v4h-8v-4H6V18Z" fill="#fff" />
+      <path d="M10 22h6v10h-4v-6h-2v-4Zm8 0h6v14h-4V24h-2v-2Zm8 0h10v10h-6v6h-4V22Zm6 4v2h2v-2h-2Z" fill="#C12127" />
+    </svg>
+  )
 
   useEffect(() => {
     const theme = themes[themeIndex]
@@ -210,13 +254,39 @@ function App() {
           <p className="body">
             Flashify is a lightweight and framework-agnostic notification library. It lets you show
             clean and animated alerts (success, error, warning, info, custom) in React web app. See{' '}
-            <a href="https://www.npmjs.com/package/@ajmal_n/flashify-react" target="_blank" rel="noreferrer">
+            <a
+              className="link"
+              href="https://www.npmjs.com/package/@ajmal_n/flashify-react"
+              target="_blank"
+              rel="noreferrer"
+            >
               @ajmal_n/flashify-react on npm
             </a>
-            .
+            . Open source and open for contributions.
           </p>
           <div className="meta-row">
-            <div className="code-block">npm install @ajmal_n/flashify-react @ajmal_n/flashify-core</div>
+            <div className="code-block">
+              <code>{installCommand}</code>
+            </div>
+            <button className="copy-btn" type="button" onClick={handleCopyInstall}>
+              <IconCopy /> Copy
+            </button>
+            <a
+              className="ghost-btn"
+              href="https://github.com/stormdotcom?tab=repositories"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IconGithub /> GitHub
+            </a>
+            <a
+              className="ghost-btn"
+              href="https://www.npmjs.com/package/@ajmal_n/flashify-react"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IconNpm /> npm
+            </a>
           </div>
           <div className="feature-list">
             <div className="feature">Works with any framework (core + simple wrappers)</div>
