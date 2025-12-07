@@ -170,7 +170,7 @@ function App() {
               label: 'Success toast',
               className: 'btn-success',
               onClick: () =>
-                flash.success('SNJNSND!', {
+                flash.success('Success!', {
                   description: 'Your changes have been saved successfully.',
                   ...defaultToastOptions,
                 }),
