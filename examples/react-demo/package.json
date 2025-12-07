@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@ajmal_n/flashify-core": "0.1.5",
-    "@ajmal_n/flashify-react": "0.1.7",
+    "@ajmal_n/flashify-core": "workspace:0.1.5",
+    "@ajmal_n/flashify-react": "workspace:0.1.7",
     "react": "^19.2.1",
     "react-dom": "^19.2.1"
   },
