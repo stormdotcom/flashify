@@ -1,6 +1,6 @@
 {
   "name": "@ajmal_n/flashify-svelte",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Svelte bindings (stub) for the Flashify core notification system.",
   "main": "dist/index.js",
   "module": "dist/index.js",

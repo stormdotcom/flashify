@@ -7,13 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@ajmal_n/flashify-core':
-        specifier: 0.1.0
-        version: 0.1.0
-      '@ajmal_n/flashify-react':
-        specifier: 0.1.3
-        version: 0.1.3(@ajmal_n/flashify-core@0.1.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
     devDependencies:
       '@semantic-release/changelog':
         specifier: ^6.0.3
@@ -121,16 +114,6 @@ importers:
         version: 3.5.25(typescript@5.9.3)
 
 packages:
-
-  '@ajmal_n/flashify-core@0.1.0':
-    resolution: {integrity: sha512-ldv7KSCD4odmB22IlPA5bEWHT6hkYJ/VF5QDRc4GaB9+4Gwn3KE9GQIck1n+Nu6PcjS6q1ALRMp5k/3iGSSNTw==}
-
-  '@ajmal_n/flashify-react@0.1.3':
-    resolution: {integrity: sha512-2pMHETArHHgT6k0n8o0s6i+SOmBzn/pCf+4uv7RyAS7yRNQ+dBmbib++HLPmmjGejAMHurBG05Oryzj2Dq+6DQ==}
-    peerDependencies:
-      '@ajmal_n/flashify-core': ^0.1.0
-      react: '>=17.0.0'
-      react-dom: '>=17.0.0'
 
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
@@ -2511,14 +2494,6 @@ packages:
     resolution: {integrity: sha512-YGAhaO7J5ywOXW6InXNlLmfU194F8lVgu7bRntUF3TiG8Y3nBK0x1UJJuHUP/e8IyihkjCYqhCScpSwnlaSRkQ==}
 
 snapshots:
-
-  '@ajmal_n/flashify-core@0.1.0': {}
-
-  '@ajmal_n/flashify-react@0.1.3(@ajmal_n/flashify-core@0.1.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)':
-    dependencies:
-      '@ajmal_n/flashify-core': 0.1.0
-      react: 19.2.1
-      react-dom: 19.2.1(react@19.2.1)
 
   '@ampproject/remapping@2.3.0':
     dependencies:

@@ -1,27 +1,47 @@
-# Node
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Dist
-dist/
-build/
-app/
 # Logs
 logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+node_modules/
+dist/
+dist-tsc/
+build/
+app/
+.turbo/
 
 # Editor
 .idea/
 .vscode/
 *.swp
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
 # pnpm
-.pnpm-store/
-pnpm-lock.yaml
-**/pnpm-lock.yaml
+.pnpm-store
+# Note: we explicitly DO NOT ignore pnpm-lock.yaml to ensure reproducible builds
+
+# Vite
+*.local
+.env.local
+.env.*.local
+
+# Angular
+.angular/
