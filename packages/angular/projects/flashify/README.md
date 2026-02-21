@@ -7,16 +7,24 @@ Angular bindings (stub) for Flashify, built on `@ajmal_n/flashify-core`. Intende
 ```bash
 npm install @ajmal_n/flashify-angular @ajmal_n/flashify-core
 ```
+
 <button onclick="navigator.clipboard.writeText('npm install @ajmal_n/flashify-angular @ajmal_n/flashify-core')">Copy install command</button>
 
 Using pnpm:
+
 ```bash
 pnpm add @ajmal_n/flashify-angular @ajmal_n/flashify-core
 ```
 
-## Status
+## Status & Roadmap
 
-Currently a placeholder. Implement Angular providers/components to consume the core store in future updates.
+Currently a placeholder.
+
+### Planned Implementation:
+
+- Develop a `FlashifyService` with an RxJS `BehaviorSubject` wrapping the core Vanilla JS store.
+- Create a standalone `<flashify-container>` component that uses Angular's `*ngFor` (or newer `@for` syntax) to render the items.
+- Inject the service via `providedIn: 'root'` to allow any component to trigger a toast effortlessly.
 
 ## License
 

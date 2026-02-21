@@ -1,8 +1,6 @@
 # @ajmal_n/flashify-react
 
-
 - Live demo: https://flashify-react.vercel.app
-
 
 React bindings for Flashify, a lightweight notification system powered by `@ajmal_n/flashify-core`.
 
@@ -11,9 +9,11 @@ React bindings for Flashify, a lightweight notification system powered by `@ajma
 ```bash
 npm install @ajmal_n/flashify-react @ajmal_n/flashify-core
 ```
+
 <button onclick="navigator.clipboard.writeText('npm install @ajmal_n/flashify-react @ajmal_n/flashify-core')">Copy install command</button>
 
 Using pnpm:
+
 ```bash
 pnpm add @ajmal_n/flashify-react @ajmal_n/flashify-core
 ```
@@ -33,7 +33,11 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 
 function App() {
   const flash = useFlashify();
-  return <button onClick={() => flash.success("Profile updated!")}>Show success</button>;
+  return (
+    <button onClick={() => flash.success("Profile updated!")}>
+      Show success
+    </button>
+  );
 }
 ```
 
@@ -46,6 +50,8 @@ import "@ajmal_n/flashify-core/dist/styles/base.css";
 import "@ajmal_n/flashify-core/dist/styles/variants.css";
 import "@ajmal_n/flashify-core/dist/styles/animations.css";
 ```
+
+The core CSS provides a modern "pill" indicator on the left side of the toast, which is fully customizable using CSS variables.
 
 ## License
 

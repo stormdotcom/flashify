@@ -7,16 +7,24 @@ Svelte bindings (stub) for Flashify, powered by `@ajmal_n/flashify-core`. Provid
 ```bash
 npm install @ajmal_n/flashify-svelte @ajmal_n/flashify-core
 ```
+
 <button onclick="navigator.clipboard.writeText('npm install @ajmal_n/flashify-svelte @ajmal_n/flashify-core')">Copy install command</button>
 
 Using pnpm:
+
 ```bash
 pnpm add @ajmal_n/flashify-svelte @ajmal_n/flashify-core
 ```
 
-## Status
+## Status & Roadmap
 
-Currently a minimal stub. Add a Svelte store that wraps the core store and expose components when ready.
+Currently a minimal stub.
+
+### Planned Implementation:
+
+- Expose the core store adapted to a Svelte readable store.
+- Create a `FlashifyContainer.svelte` component that subscribes to the store and loops through notifications (`{#each}`).
+- Provide a `getFlashify()` context or a globally writable wrapper to trigger toasts.
 
 ## License
 
