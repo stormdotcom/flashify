@@ -5,7 +5,8 @@
     "build": "turbo run build",
     "dev": "pnpm --filter @ajmal_n/flashify-react dev",
     "lint": "pnpm -r lint",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "publish:packages": "node scripts/publish.mjs"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
