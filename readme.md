@@ -1,4 +1,4 @@
-#  Flashify — Simple & Modern Notification System
+# Flashify — Simple & Modern Notification System
 
 Flashify is a lightweight and framework-agnostic notification library.  
 It lets you show clean and animated alerts (success, error, warning, info, custom) in any web app — React, Angular, Svelte, Vue, or plain JavaScript.
@@ -7,44 +7,50 @@ It lets you show clean and animated alerts (success, error, warning, info, custo
 
 ---
 
-##  Features
+## Features
 
 - Works with **any framework** (core + simple wrappers)
+- Planned support for **React, Vue, Svelte, and Angular** bindings
 - **Success, Error, Warning, Info, Default, Custom** notifications
-- Smooth animations and modern UI
+- Smooth animations with a modern soft "pill" indicator design
 - Fully **themeable** using CSS variables or Tailwind
 - Small bundle size and no external dependencies
-- Comes with a **React wrapper** out of the box
 
 ---
 
-##  Install
+## Install
 
 ### Core package (for any JS app)
+
 ```bash
 npm install @ajmal_n/flashify-core
 ```
+
 <button onclick="navigator.clipboard.writeText('npm install @ajmal_n/flashify-core')">Copy install command</button>
 
 Using pnpm:
+
 ```bash
 pnpm add @ajmal_n/flashify-core
 ```
 
 ### React wrapper
+
 ```bash
 npm install @ajmal_n/flashify-react
 ```
+
 <button onclick="navigator.clipboard.writeText('npm install @ajmal_n/flashify-react')">Copy install command</button>
 
 Using pnpm:
+
 ```bash
 pnpm add @ajmal_n/flashify-react
 ```
 
 ---
 
-##  Basic Usage (React)
+## Basic Usage (React)
 
 ```tsx
 import { FlashifyProvider, useFlashify } from "@ajmal_n/flashify-react";
@@ -78,7 +84,7 @@ Wrap your app:
 
 ---
 
-##  Core Usage (Vanilla JavaScript)
+## Core Usage (Vanilla JavaScript)
 
 ```js
 import { flashify } from "@ajmal_n/flashify-core";
@@ -100,15 +106,19 @@ flashify.show({
 
 ---
 
-##  Styling & Theming
+## Styling & Theming
 
-Flashify uses CSS variables, so you can change colors instantly:
+Flashify uses CSS variables, so you can change colors and metrics instantly:
 
 ```css
 :root {
+  /* Indicator background colors */
   --flashify-success-bg: #ecfdf5;
   --flashify-success-border: #10b981;
   --flashify-success-text: #065f46;
+
+  /* Shared Border Radius */
+  --flashify-radius: 12px;
 }
 ```
 
@@ -118,11 +128,14 @@ Works perfectly with Tailwind themes too.
 
 ## 📂 Monorepo Structure
 
-```
+```text
 flashify/
   packages/
     core/     - Notification engine (vanilla JS)
     react/    - React wrapper
+    vue/      - Vue bindings (upcoming)
+    svelte/   - Svelte bindings (upcoming)
+    angular/  - Angular bindings (upcoming)
 ```
 
 ---
@@ -155,17 +168,16 @@ flashify.clear()
 
 ---
 
-##  Contributing
+## Contributing
 
 Pull requests are welcome!  
 You can add wrappers for other frameworks or improve animations/themes.
 
 ---
 
-##  License
+## License
 
 MIT License  
 Free for commercial and personal projects.
 
-
-[![Maintainer](https://img.shields.io/badge/maintainer-Ajmal%20Nasumudeen%20(stormdotcom)-blue)](https://github.com/stormdotcom)
+[![Maintainer](<https://img.shields.io/badge/maintainer-Ajmal%20Nasumudeen%20(stormdotcom)-blue>)](https://github.com/stormdotcom)
